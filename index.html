@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Invitation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .invitation-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e8491d;
+    }
+
+    p {
+      color: #333;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .response-buttons {
+      margin-top: 20px;
+    }
+
+    .response-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .response-buttons .yes {
+      background-color: #e8491d;
+      color: #fff;
+    }
+
+    .response-buttons .no {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .response-buttons button:hover {
+      filter: brightness(1.2);
+    }
+
+    .confirmation-message {
+      margin-top: 20px;
+    }
+
+    .confirmation-message p {
+      color: #e8491d;
+      font-weight: bold;
+    }
+
+    .sad-face {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="invitation-card">
+  <h1>You're Invited!</h1>
+  <p>To the loml Brenda Marie Yacat,</p>
+  <p>On this special day, I would be honored if you could be my Valentine's date.</p>
+  <img src="src/img/heart.png" alt="Heart Image">
+  <p>Looking forward to a wonderful time together!</p>
+  <div class="response-buttons">
+    <button class="yes" onclick="showConfirmation()">Yes</button>
+    <button class="no" onclick="showSadFace()">No</button>
+  </div>
+  <div class="confirmation-message" id="confirmationMessage" style="display: none;">
+    <p>I'll see you on February 17, 2024 at 5 pm!</p>
+  </div>
+  <div class="sad-face" id="sadFace" style="display: none;">
+    <p>You make me SAD!</p>
+    😞
+  </div>
+</div>
+
+<script>
+  function showConfirmation() {
+    // Redirect to a confirmation page
+    window.location.href = 'confirmation_page.html';
+  }
+
+  function showSadFace() {
+    // Redirect to a sad face page
+    window.location.href = 'sad_face_page.html';
+  }
+</script>
+</body>
+</html>
